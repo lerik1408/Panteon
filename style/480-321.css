@@ -1,0 +1,225 @@
+.background{
+    background: url("../img/1block/Background_480.png") no-repeat;
+    background-size:cover; 
+}
+.menu{
+    width: 100%;
+    height: 350px;
+}
+.conteiner{
+    width: 93.75%;
+}
+.header-main{
+    width: 72.62%;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+.header-main ul{
+    display: none;
+}
+.header-main h1{
+    width: 100%;
+    height: 120px;
+    margin-left: 100px;
+    font-size:17px;
+    word-wrap: none;
+    margin-left: 40px;
+}
+.header-main h1 span:last-child{
+    font-family: 'Proxima Nova Bl';
+    font-size: 80px;
+    line-height:100px;
+}
+.header-main iframe{
+    position:relative;
+    left: -18%;
+    bottom:20%;
+}
+.header-button {
+    bottom: 3%;
+    left: 40%;
+}
+/* ХЕДЕР КОНЕЦ */
+.RememberAll-content h2{
+    font-size: 35px;
+}
+.RememberAll-content-content-block>p{
+    padding-top: 10px;
+
+}
+/* RememberAll Конец */
+.idea h2{
+    font-family: 'Proxima Nova Rg';
+    font-size:40px;
+    color:#e12457;
+}
+.idea blockquote{
+    margin-bottom: 60px;
+}
+.idea1{
+    margin-top: 40%;
+}
+.idea1-background{
+    background:url("../img/3block/Background_768.png") no-repeat;
+    background-size: cover;
+    height: 655px;
+}
+.idea1-background img{
+    top: -15%;
+    left:15%;
+    width: 255px;
+    height: 255px;
+}
+.idea1-background-content{
+    margin-left: 20px;
+    padding-top: 55%;
+    width: 80%;
+}
+.idea1-background-content h3{
+    padding-bottom: 10px;
+}
+.idea1-background-flex{
+    justify-content: space-around;
+    flex-direction: column;
+    height: 200px;
+    margin-left: 5%;
+    padding-top: 80px;
+    width: 90%;
+}
+.idea1-background-flex p:first-child{
+    font-size:50px;
+}
+.idea1-background-content-mars{
+    font-size:25px;
+}
+.idea1-background-content-mars::after{
+    width: 180px;
+}
+/* Конец идеи */
+.life{
+    position:relative;
+}
+.life-modal-content{
+    width: 80vw;
+    top: 40%;
+    right: -10%;
+
+}
+.life-modal-content p{
+    bottom: 30%;
+    right: 20%;
+    font-size:25px;
+}
+.life-modal span{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    z-index: 11;
+}
+.life-modal span::after,
+.life-modal span::before{
+
+    width: 40px;
+}
+.life h2{
+    font-size: 36px;
+    margin-top:60px;
+}
+.life-dotsWrap{
+    position:absolute;
+    margin-top: 40px;
+    height: 780px;
+    float:none;
+}
+.life-dotsWrap-dot:first-child{
+    margin-bottom: 300px;
+}
+.life-dotsWrap-dot a::after{
+    content:"";
+    position:absolute;
+    left: 42%;
+    top: 100%;
+    display:block;
+    width: 3px;
+    height: 82px;
+    background-color:#e12457;
+}
+.life-dotsWrap #first a::after{
+    height: 438px;
+   }
+.life-dotsWrap-img>*::after{
+    transform:rotate(0deg);
+    bottom: 20%;
+    left: 140%;
+    font-size:25px;
+}
+.life-slider-item{
+    float: none;
+    margin-top:70px;
+    margin-left: 40px;
+}
+.life-button{
+    bottom: 200px;
+    right: 0;
+}
+/* Конец лайфа */
+.footer{
+    background:url(../img/5block/Background_768.png) no-repeat;
+    background-size: cover;
+}
+.footer-conteiner h2{
+    font-size:36px;
+}
+.footer-conteiner-main{
+    margin-top: 45px;
+    flex-direction:column;
+}
+.footer-conteiner-main-form{
+    width: 100%;
+    height: 415px;
+    background:url(../img/5block/Form_320.png) no-repeat;
+    background-size:cover;
+    order:1;
+}
+.footer-conteiner-main-content{
+    width: 100%;
+}
+.footer-conteiner-main-content>*{
+    margin-left: 0px;
+    margin-top: 40px;
+    color:#fff;
+}
+.footer-conteiner-main-content a{
+    margin-bottom: 40px;
+}
+.footer-conteiner-main-content p:first-child{
+    margin-top: 0;
+}
+.footer-conteiner-footer-logo{
+     order:2;
+}
+.footer-conteiner-footer-link{
+    order:1;
+}
+.footer-conteiner-footer{
+    margin-top: 110px;
+    height: 257px;
+    padding-bottom: 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (min-width:375px) and (max-width:375px){
+    .header-main iframe{
+        position:relative;
+        left: -10%;
+        bottom:20%;
+    }
+    .header-button{
+        bottom: 5%;
+        left: 40%;
+    }
+}

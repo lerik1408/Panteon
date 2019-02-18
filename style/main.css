@@ -1,0 +1,911 @@
+
+body,p,h1,h2,h3,h4,ul,li,span{
+    font-family: 'Proxima Nova Lt','Courier New', Courier, monospace;
+    color:#ffffff;
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+@-webkit-keyframes moveIn {
+    0% {
+      opacity: 0.5;
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+    }
+  }
+  
+  @keyframes moveIn {
+    0% {
+        opacity: 0.5;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+      }
+    
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+      }
+  }
+.background{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/1block/Background_1170.png") no-repeat;
+    background-size: cover;
+}
+.menu{
+    display:none;
+    top: 100px;
+    right: 0;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+}
+.menu-nav{
+    background-color:rgba(171,27,97,1)
+}
+.menu-nav-item{ 
+    display:block;
+    font-size:25px;
+    color:#fff;
+    padding-top: 10px;
+    text-decoration: none;
+    
+}
+.conteiner{
+    width: 1150px;
+    margin:auto;
+}
+.header{
+    height: 945px;
+}
+.header-header{
+    display: flex;
+    height: 50px;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.header-header-logo{
+    width: 180px;
+    height: 48px;
+    margin-right: auto;
+}
+.header-header-logo picture{
+    margin: 0;
+    margin-right: 16px;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    display: block;
+    float: left;
+}
+
+.header-header-logo picture img{
+    width: 48px;
+    height: 48px;
+}
+.header-header-logo h4{
+    display: block;
+    font-family: 'Proxima Nova Lt';
+    font-size:21px;
+    margin-left: 16px;
+    
+}
+.header-header-logo span{
+    font-family: 'Proxima Nova Th';
+    display: block;
+    font-size:15px;
+    margin-left: 16px;
+}
+.header-header-burger{
+    display:flex;
+    width: 120px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    user-select: none;
+}
+.header-header-burger .menu-btn{
+    display: block;
+    position: relative;
+    width: 120px;
+    height: 20px;
+    text-decoration: none;
+    margin-left:18px;
+    
+}
+.header-header-burger .menu-btn span,
+.header-header-burger .menu-btn span::before,
+.header-header-burger .menu-btn span::after{
+    position: absolute;
+    top: 50%;
+    width: 47px;
+    height: 2px;
+    background-color:#ffffff;
+    transition:0.5s;
+}
+.header-header-burger .menu-btn span::before,
+.header-header-burger .menu-btn span::after{
+    content:'';
+    display:block;
+    
+}
+.header-header-burger .menu-btn span::before{
+    transform: translateY(-8px);
+    width: 29px;
+}
+.header-header-burger .menu-btn span::after{
+    transform: translateY(6px);
+    width: 22px;
+}
+.header-header-burger .menu-btn_active span{
+    transform: rotate(90deg)
+}
+.header-header-burger .menu-btn_active span::before{
+
+    transform: translate(18px,-5px);
+}
+.header-header-burger .menu-btn_active span::after{
+    transform: translate(25px,3px);
+}
+
+.header-main{
+    margin-top: 5vh;
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 915px;
+    height: 530px;
+    flex-wrap:wrap;
+}
+.header-main ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;
+    justify-content: space-between;
+    align-self: flex-start;
+    font-size:24px;
+}
+.header-main-panteon{
+    width: 20px;
+    height: 300px;
+    margin-right: 3.5%
+}
+.header-main-panteon>*{
+    opacity: 0.2;
+}
+.header-main-olimp{
+    width: 20px;
+    height: 225px;
+    margin-right: 5%
+}
+.header-main-olimp>*{
+    opacity: 0.5;
+}
+.header-main h1{
+    font-family: 'Proxima Nova Rg';
+    font-size: 37px;
+    width: 590px;
+    height: 180px;
+}
+.header-main h1 span:first-child{
+    font-family: 'Proxima Nova Th';
+}
+.header-main h1 span:last-child{
+    font-family: 'Proxima Nova Bl';
+    font-size: 195px;
+    margin-top: -50px;
+    padding-bottom:-50px;
+    line-height:150px;
+}
+.header-main iframe{
+    align-self:flex-end;
+    margin-left: 100px;
+    margin-top:-50px
+}
+.header-button{
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color:#ab1b61;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-button:hover{
+    -webkit-animation: moveIn 0.3s linear;
+    animation: moveIn 0.3s linear;
+}
+.header-button span,
+.header-button span::after,
+.header-button span::before{
+    display: block;
+    background-color:#ffffff;
+    width: 16px;
+    height: 2px;
+}
+.header-button span::after,
+.header-button span::before{
+    content:" ";
+}
+.header-button span{
+    transform: rotate(45deg);
+    margin-right:10px;
+}
+.header-button span::after{
+    transform: rotate(-90deg) translate(9px,7px);
+}
+.header-button span::before{
+    transform: rotate(-90deg) translate(14px,1px);
+}
+/* ХЕДЕР КОНЕЦ */
+.RememberAll{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.RememberAll-header{
+    background-color:#fff5f8;
+}
+.RememberAll-header-content{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:3%;
+}
+.RememberAll-header-content-block{
+    position: relative;
+    width: 140px;
+    height: 105px;
+}
+.RememberAll-header-content-block h4{
+    font-size: 48px;
+    color:#e12457;
+}
+.RememberAll-header-content-block p{
+    display: inline-block;
+    font-size:13px;
+    color:#4d4d4d;
+}
+.RememberAll-header-content-block::after{
+    position: absolute;
+    left: -5px;
+    bottom:30px;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 49px;
+    background-color:#fbd6e0
+}
+.RememberAll-content{
+    margin-top: 2%;
+}
+.RememberAll-content h2{
+    font-family: 'Proxima Nova Rg';
+    font-size: 60px;
+    color:#e12457;
+    margin-left: 1%;
+}
+.RememberAll-content-content{
+    display:flex;
+}
+.RememberAll-content-content-block{
+    width: 465px;
+    margin-left: 5%;
+}
+.RememberAll-content-content-block>h3{
+    padding-top: 30px;
+    font-size:24px;
+    color:#000000;
+}
+.RememberAll-content-content-block>p{
+    padding-top: 30px;
+    font-size:14px;
+    color:#4d4d4d;
+}
+/* RememberAll Конец */
+
+.idea h2{
+    font-family: 'Proxima Nova Rg';
+    font-size:60px;
+    color:#e12457;
+}
+.idea h3{
+    font-family: 'Proxima Nova Rg';
+    font-size:24px;
+    color:#000;
+    padding-top: 40px;
+}
+.idea p{
+    display: inline-block;
+    width: 60%;
+    font-size:16px;
+    color:#4c4c4c;
+    padding-top: 10px;
+    float: left;
+}
+
+.idea picture{
+    float: right;
+    width: 40%;
+    height: 375px;
+}
+.idea picture img{
+    box-shadow:30px -30px 0 0#fff, 30px -30px 0 10px #e12457;
+}
+.idea blockquote{
+    background-color:#fff5f8;
+    width: 60%;
+    height: 60px;
+}
+.idea blockquote p::before{
+    position:absolute;
+    left: -10%;
+    content:"";
+    display:block;
+    width: 13px; height: 12px;
+    background: url("../img/css_sprites.png") -171px -61px;
+}
+.idea blockquote p{
+    padding-top: 40px;
+    font-size:18px;
+    color:#e12457;
+    position: relative;
+}
+.ff{
+    background-color: #000;
+    width: 100%;
+    height: 500px;
+}
+.idea1{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 1150px;
+}
+.idea1-background{
+    background:url("../img/3block/Background_1170.png") no-repeat;
+    height: 310px;
+}
+.idea1-background img{
+    position: absolute;
+    top: -10%;
+    left:1%;
+}
+.idea1-background-content{
+    margin-left: 45%;
+    padding-top: 40px;
+    width: 40%;
+    
+}
+.idea1-background-content>*{
+    display: inline-block;
+    
+}
+.idea1-background-content h3{
+    font-family: 'Proxima Nova Rg';
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+.idea1-background-content p{
+    font-size:16px;
+}
+.idea1-background-flex{
+    display: flex;
+    margin-left: 45%;
+    /* justify-content: space-around; */
+    padding-top: 40px;
+    width: 50%;
+    align-items: center;
+}
+.idea1-background-flex p:first-child{
+    font-family: 'Proxima Nova Th';
+    font-size:60px;
+}
+.idea1-background-content-mars{
+    font-family: 'Proxima Nova Th';
+    font-size:24px;
+    margin: 0 10px;
+}
+.idea1-background-content-mars::after{
+    position:absolute;
+    content:"";
+    display:block;
+    width: 157px;
+    height: 2px;
+    background-color: #fff
+}
+.idea1-background-flex-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 205px;
+    height: 55px;
+    background-color:#fff;
+    border-radius: 45px;
+    font-family: 'Proxima Nova Rg';
+    font-size:18px;
+    color:#c2529a;
+}
+.idea1-background-flex-button:hover{
+    background-color:#020b4a;
+    transition:background-color 1s;
+}
+/* Конец идеи */
+
+.life{
+    height: 1050px;
+    position: relative;
+}
+.life-modal{
+    display:none;
+    position:fixed;
+    background-color:rgba(171,27,97,0.8);
+    width:100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+}
+.life-modal-content{
+    width: 50vw;
+    height: 200px;
+    border:5px solid #fff;
+    position: relative;
+    top: 40%;
+    right: -20%;
+}
+.life-modal span{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 11;
+}
+.life-modal span::after,
+.life-modal span::before{
+    content:"";
+    position:absolute;
+    display:block;
+    top: 50%;
+    left: 0%;
+    width: 60px;
+    height: 3px;
+    background-color:#fff;
+}
+.life-modal span::after{
+    transform:rotate(45deg)
+}
+.life-modal span::before{
+    transform:rotate(-45deg)
+}
+.life-modal-content p{
+    position: absolute;
+    bottom: 30%;
+    right: 20%;
+    font-size:40px;
+}
+.life h2{
+    font-family: 'Proxima Nova Rg';
+    font-size: 60px;
+    color:#e12457;
+}
+
+.life-dotsWrap{
+    margin-top: 60px;
+    display:flex;
+    flex-wrap: wrap;
+    width: 80px;
+    height: 700px;
+    float: left;
+}
+.life-dotsWrap-dot{
+    width: 40px;
+    height: 40px;
+    align-self: flex-end;
+}
+.life-dotsWrap-dot:first-child{
+    margin-bottom: 100px;
+    align-self: flex-start;
+}
+.life-dotsWrap-dot a{
+    position:relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: radial-gradient(circle closest-side, white 5px, #e12457 6px, #e12457 8px);
+}
+.life-dotsWrap-dot a::after{
+    content:"";
+    position:absolute;
+    left: 42%;
+    top: 100%;
+    display:block;
+    width: 3px;
+    height: 104px;
+    background-color:#e12457;
+}
+.life-dotsWrap #last a::after{
+  display: none;
+}
+.life-dotsWrap #first a::after{
+    height: 284px;
+   }
+.life-dots_active a{
+    background:none;
+    background-color:#e12457;
+}
+.life-dotsWrap-img{
+    width: 40px;
+    height: 40px;
+    align-self: flex-end;
+}
+.life-dotsWrap-img-start{
+    align-self: flex-start;
+}
+.dotsWrap-background-1{
+    position: relative;
+    width: 30px; height: 23px;
+    background: url('../img/css_sprites.png') -10px -119px;
+}
+.dotsWrap-background-2{
+    position: relative;
+    width: 26px; height: 19px;
+    background: url('../img/css_sprites.png') -105px -119px;
+}
+.dotsWrap-background-3{
+    position: relative;
+    width: 22px; height: 31px;
+    background: url('../img/css_sprites.png') -171px -10px;
+}
+.dotsWrap-background-4{
+    position: relative;
+    width: 25px; height: 21px;
+    background: url('../img/css_sprites.png') -60px -119px;
+}
+.dotsWrap-background-5{
+    position: relative;
+    width: 26px; height: 27px;
+    background: url('../img/css_sprites.png') -119px -52px;
+}
+.life-dotsWrap-img>*::after{
+    content:"Проживание";
+    display: none;
+    color:#e12457;
+    position: absolute;
+    transform:rotate(-90deg);
+    bottom: -280%;
+    left: -110%;
+}
+.dotsWrap-background-1::after{
+    content:"Проживание";
+}
+.dotsWrap-background-2::after{
+    content:"Роботы";
+    left: -50%;
+}
+.dotsWrap-background-3::after{
+    content:"Наука";
+    bottom: -200%;
+    left: -50%;
+}
+.dotsWrap-background-4::after{
+    content:"Фото";
+    left: -30%;
+}
+.dotsWrap-background-5::after{
+    content:"Исследования";
+    left: -150%;
+}
+.dotsWrap-background_active::after{
+    display:inline-block;
+}
+.life-slider-item{
+    width: 85.21%;
+    float: right;
+    margin-top:60px;
+}
+.life-slider-item img{
+    width: 100%;
+}
+.life-slider-item h3{
+    font-family: 'Proxima Nova Rg';
+    font-size: 24px;
+    padding-top: 40px;
+    color:#000;
+    padding-bottom: 20px;
+}
+.life-slider-item p{
+    font-family: 'Proxima Nova Lt';
+    font-size:16px;
+    color:#4c4c4c;
+}
+.life-button{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+    background-color:#e12457;
+    border-radius: 50px;
+    bottom: 200px;
+    right: 70.94%;
+}
+.life-button a{
+    font-family: 'Proxima Nova Rg';
+    text-decoration: none;
+    color:#fff;
+    font-size:20px;
+}
+/* Конец лайфа */
+.footer{
+    width: 100%;
+    background:url(../img/5block/Background_1170.png) no-repeat;
+    background-size: cover;
+}
+.footer-conteiner h2{
+    font-family: 'Proxima Nova Rg';
+    font-size:60px;
+    padding-top:120px;  
+}
+.footer-conteiner-main{
+    margin-top: 70px;
+    display:flex;
+    justify-content: space-around;
+}
+/* Форма Начало */
+.footer-conteiner-main-form{
+    width: 390px;
+    height: 415px;
+    background:url(../img/5block/Form_1170.png) no-repeat;  
+}
+.footer-conteiner-main-form-wrap{
+    margin: 0 auto;
+    padding-top: 70px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 260px;
+    height: 280px;
+}
+.footer-conteiner-main-form-wrap h4{
+    font-family: 'Proxima Nova Rg';
+    display:inline-block;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.footer-conteiner-main-form-wrap-group{
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+.footer-conteiner-main-form-wrap-group input{
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width: 220px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background:none;
+    color:#fff;
+  }
+.footer-conteiner-main-form-wrap-group input:focus {
+    outline: none;
+  }
+.footer-conteiner-main-form-wrap-group label {
+    color: #999;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 15px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+.footer-conteiner-main-form-wrap-group input:focus ~ label,
+.footer-conteiner-main-form-wrap-group input:valid ~ label {
+    top: -15px;
+    font-size: 14px;
+    color: #fff;
+  }
+.footer-conteiner-main-form-wrap-group .bar{
+    position: relative;
+    display: block;
+    width: 240px;
+    border:none;
+}
+.footer-conteiner-main-form-wrap-group .bar:before,
+.footer-conteiner-main-form-wrap-group .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #fff;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+.footer-conteiner-main-form-wrap-group .bar:before {
+    left: 50%;
+  }
+.footer-conteiner-main-form-wrap-group .bar:after {
+    right: 50%;
+  }
+  
+.footer-conteiner-main-form-wrap-group input:focus ~ .bar:before,
+.footer-conteiner-main-form-wrap-group input:focus ~ .bar:after {
+    width: 50%;
+  }
+
+.footer-conteiner-main-form-wrap-button{
+    font-family: 'Proxima Nova Rg';
+    font-size:18px;
+    width: 253px;
+    height: 55px;
+    border-radius: 50px;
+    color:#e12457;
+}
+.footer-conteiner-main-form-wrap-button:hover{
+    box-shadow: 1px -2px 60px -9px rgba(255,255,255,1);
+    transform: 0.2s ease box-shadow;
+    -moz-transition: 0.2s ease box-shadow;
+    -webkit-transition:  0.2s ease box-shadow;
+}
+/* Форма конец */
+.footer-conteiner-main-content{
+    width: 670px;
+}
+.footer-conteiner-main-content>*{
+    font-size:16px;
+    margin-left: 40px;
+    display:block;
+    margin-top: 40px;
+    color:#fff;
+}
+.footer-conteiner-footer{
+    margin-top: 110px;
+    padding-bottom: 40px;
+    display:flex;
+    justify-content: space-between;
+}
+.footer-conteiner-footer-logo-logoImg{
+    width: 32px; height: 32px;
+    display:inline-block;
+    background: url('../img/css_sprites.png') -64px -65px;
+    float: left;
+}
+.footer-conteiner-footer-logo-text{
+    float:right;
+    margin-left: 10px;
+    line-height: 15px;
+}
+.footer-conteiner-footer-logo p{
+    font-family: 'Proxima Nova Sem';
+    font-size:17px;
+}
+.footer-conteiner-footer-logo span{
+    src: url('ProximaNovaT-Thin.eot');
+    font-size:13px;
+}
+.footer-conteiner-footer-link{
+    display:block;
+    color:gray;
+    text-decoration:underline;
+}
+.footer-conteiner-footer-social a{
+    display:inline-block;
+    margin-left: 5px;
+}
+.footer-conteiner-footer-social-vk{
+    width: 35px; height: 35px;
+    background: url('../img/css_sprites.png') -10px -10px;
+}
+.footer-conteiner-footer-social-tw{
+    width: 34px; height: 34px;
+    background: url('../img/css_sprites.png') -65px -10px;
+}
+.footer-conteiner-footer-social-fa{
+    width: 34px; height: 34px;
+    background: url('../img/css_sprites.png') -10px -65px;
+}
+.footer-conteiner-footer-social-you{
+    margin-bottom: 5px;
+    width: 32px; height: 22px;
+    background: url('../img/css_sprites.png') -119px -10px;
+}
+@media screen and (max-width:1150px){
+    .conteiner{
+        width: 93.75%;
+    }
+    .header-main{
+        width: 72.62%;
+        margin-left: 10%;
+    }
+    .header-main ul{
+        display: none;
+    }
+    .header-main h1{
+        width: 100%;
+        height: 150px;
+        margin-left: 100px;
+    }
+    .idea1{
+        width: 100%;
+    }
+
+    .idea1-background-flex p:first-child{
+        font-family: 'Proxima Nova Th';
+        font-size:40px;
+    }
+    .idea1-background-content-mars{
+        position: relative;
+        font-family: 'Proxima Nova Th';
+        font-size:15px;
+        margin: 0 10px;
+    }
+    .idea1-background-content-mars::after{
+        width: 100px;
+    }
+    .idea1-background-flex-button{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        height: 55px;
+        background-color:#fff;
+        border-radius: 45px;
+        font-family: 'Proxima Nova Rg';
+        font-size:18px;
+        color:#c2529a;
+    } 
+    @media screen and (max-width:768px){ 
+        .idea picture{
+            float: none;
+            margin-left: 20%;
+        }
+        .idea picture img{
+            box-shadow: 10px -10px 0 0 #fff, 10px -10px  0 5px #e12457;
+            margin-top: 5%;
+        }
+        .idea p{
+            display: block;
+            width: 95%;
+            float: none;
+        }
+        .idea blockquote{
+            width: 80%;
+        }
+        .idea blockquote p{
+            padding: 0;
+            font-size:16px;
+            color:#e12457;
+        }
+        .idea1-background{
+            background:url("../img/3block/Background_768.png") no-repeat;
+            height: 380px;
+        }
+    }
+}
+

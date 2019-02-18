@@ -1,0 +1,188 @@
+.background{
+    background: url("../img/1block/Background_600.png") no-repeat;
+    background-size:cover; 
+}
+.conteiner{
+    width: 93.75%;
+}
+.header-main{
+    width: 72.62%;
+    margin-left: 10%;
+}
+.header-main ul{
+    display: none;
+}
+.header-main h1{
+    width: 100%;
+    height: 120px;
+    margin-left: 100px;
+    font-size:20px;
+    word-wrap: none;     
+}
+.header-main h1 span:last-child{
+    font-family: 'Proxima Nova Bl';
+    font-size: 120px;
+    line-height:120px;
+}
+.header-main iframe{
+    align-self:flex-end;
+    margin-left: 100px;
+    margin-bottom:50px;
+}
+.header-button{
+    left: 50%;
+}
+/* ХЕДЕР КОНЕЦ */
+.RememberAll-content h2{
+    font-size: 45px;
+}
+.RememberAll-content-content-block>p{
+    padding-top: 10px;
+}
+/* RememberAll Конец */
+.idea blockquote{
+    margin-bottom: 40px;
+}
+.idea1{
+    margin-top: 10%;
+}
+.idea1-background img{
+    top: -10%;
+    left:5%;
+    width: 200px;
+    height: 200px;
+}
+.idea1-background-content{
+    margin-left: 48%;
+    width: 35%;
+}
+.idea1-background-content>*{
+    display: inline-block;
+}
+.idea1-background-content h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.idea1-background-content p{
+    font-size:13px;
+    width: 110%;
+}
+.idea1-background-flex{
+    justify-content: space-around;
+    margin-left: 5%;
+    padding-top: 80px;
+    width: 90%;
+}
+.idea1-background-content-mars{
+    font-size:18px;
+}
+.idea1-background-content-mars::after{
+    width: 125px;
+}
+/* Конец идеи */
+.life{
+    height: 890px;
+}
+.life-modal-content{
+    width: 80vw;
+    top: 40%;
+    right: -10%;
+
+}
+.life-modal-content p{
+    bottom: 30%;
+    right: 20%;
+    font-size:30px;
+}
+.life-modal span{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    z-index: 11;
+}
+.life-modal span::after,
+.life-modal span::before{
+
+    width: 40px;
+}
+.life h2{
+    font-size: 48px;
+    margin-top: 70px;
+}
+.life-dotsWrap{
+    margin-top:20px;
+    width: 93%;
+    flex-direction: column;
+    height: 80px;
+    border:1px solid #000000;
+    float:none;
+}
+.life-dotsWrap-dot:first-child{
+    margin-bottom: 0px;
+    align-self: flex-start;
+}
+.life-dotsWrap-dot a::after{
+    width: 545%;
+    height: 3px;
+    left: 104%;
+    top: 45%;
+}
+.life-dotsWrap #first a::after{
+    height: 3px;
+    width: 1320%;
+   }
+.life-dotsWrap-img>*::after{
+    color:#e12457;
+    position: absolute;
+    transform:rotate(0deg);
+    bottom: 100%;
+    left: 0%;
+}
+.dotsWrap-background-2::after{
+    left: -50%;
+}
+.dotsWrap-background-3::after{
+    left: -40%;
+}
+.dotsWrap-background-4::after{
+    left: -20%;
+}
+.dotsWrap-background-5::after{
+    left: -100%;
+}
+.life-slider-item{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    margin-top:40px;
+    float:none;
+}
+.life-button{
+    bottom: 100px;
+    right: 0;
+    left: 0;
+}
+/* Конец лайфа */
+.footer{
+    background:url(../img/5block/Background_768.png) no-repeat;
+    background-size: cover;
+}
+.footer-conteiner-main-form{
+    width: 345px;
+    height: 395px;
+    background:url(../img/5block/Form_768.png) no-repeat; 
+}
+.footer-conteiner-main-form-wrap h4{
+    font-size: 20px;
+}
+.footer-conteiner-main-content>*{
+    margin-left: 10px;
+    display:block;
+    margin-top: 10px;
+}
+
+.footer-conteiner-main-content p:first-child{
+    margin-top: 0;
+}
