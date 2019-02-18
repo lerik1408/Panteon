@@ -36,6 +36,7 @@
     bottom:20%;
 }
 .header-button {
+    display: none;
     bottom: 3%;
     left: 40%;
 }
